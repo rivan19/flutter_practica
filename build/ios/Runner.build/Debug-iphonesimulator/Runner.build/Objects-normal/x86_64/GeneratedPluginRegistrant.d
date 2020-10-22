@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/dyld.modulemap \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/rillopis/Developer/Projects/Flutter/everpobre-master/ios/Flutter/Flutter.framework/Headers/Flutter.h
