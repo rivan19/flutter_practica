@@ -17,4 +17,5 @@ linter:
     # better to have this deactivetd for beginners
     prefer_const_constructors: true
     avoid_classes_with_only_static_members: false
+    prefer_initializing_formals: false
     

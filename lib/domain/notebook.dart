@@ -4,9 +4,16 @@ import 'package:flutter/material.dart';
 class Notebook with ChangeNotifier {
   static final shared = Notebook();
 
+  String _title = "";
   final List<Note> _notes = [];
 
   int get length => _notes.length;
+
+  String get title => _title;
+  set title(String newValue) {
+    _title = newValue;
+    notifyListeners();
+  } 
 
   // Constructores
   Notebook();
@@ -14,6 +21,15 @@ class Notebook with ChangeNotifier {
   Notebook.testDataBuilder() {
     _notes.addAll(List.generate(100, (index) => Note("Item $index")));
   }
+
+  Notebook.withTitle(String title){
+    _title = title;
+  }
+
+Notebook.testDataWithTitle(String title){
+  Notebook.withTitle(title);
+  Notebook.testDataBuilder();
+}
 
   // Accesores
   Note operator [](int index) {
