@@ -12,7 +12,7 @@ class Notebooks with ChangeNotifier {
   Notebooks();
 
   Notebooks.testDataBuilder(){
-    _listbooks.addAll(List.generate(10, (index) => Notebook.testDataWithTitle("Notebook: $index")));
+    _listbooks.addAll(List.generate(20, (index) => Notebook.testDataWithTitle("Notebook: $index")));
   }
 
   //Accesores

@@ -38,7 +38,6 @@ class _NotesListViewState extends State<NotesListView> {
     );
   }
 }
-
 class NoteSliver extends StatefulWidget {
   final Notebook notebook;
   final int index;

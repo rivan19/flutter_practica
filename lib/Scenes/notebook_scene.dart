@@ -1,15 +1,15 @@
 import 'package:everpobre/Scenes/notes_scene.dart';
-import 'package:flutter/material.dart';
 import 'package:everpobre/text_resources.dart';
 import 'package:everpobre/domain/note.dart';
 import 'package:everpobre/domain/messages.dart';
 import 'package:everpobre/domain/notebook.dart';
+import 'package:flutter/material.dart';
 
 class NoteBookListView extends StatefulWidget {
   final Notebook _model;
   const NoteBookListView(Notebook model) : _model = model;
 
-  static const routeName = "/";
+  static const routeName = "/Notebook";
 
   @override
   _NoteBookListViewState createState() => _NoteBookListViewState();

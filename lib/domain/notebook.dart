@@ -24,11 +24,14 @@ class Notebook with ChangeNotifier {
 
   Notebook.withTitle(String title){
     _title = title;
+    notifyListeners();
   }
 
 Notebook.testDataWithTitle(String title){
-  Notebook.withTitle(title);
-  Notebook.testDataBuilder();
+  //Notebook.withTitle(title);
+  //Notebook.testDataBuilder();
+  _title = title;
+  _notes.addAll(List.generate(100, (index) => Note("Item $index")));
 }
 
   // Accesores
