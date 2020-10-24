@@ -42,9 +42,9 @@ class NoteSliver extends StatefulWidget {
   final Notebook notebook;
   final int index;
 
-  const NoteSliver(Notebook notebook, int index)
-      : this.notebook = notebook,
-        this.index = index;
+  const NoteSliver(Notebook _notebook, int _index)
+      : notebook = _notebook,
+        index = _index;
 
   @override
   _NoteSliverState createState() => _NoteSliverState();
@@ -53,7 +53,7 @@ class NoteSliver extends StatefulWidget {
 class _NoteSliverState extends State<NoteSliver> {
   @override
   Widget build(BuildContext context) {
-    DateFormat fmt = DateFormat("yyyy-mm-dd");
+    final DateFormat fmt = DateFormat("yyyy-mm-dd");
 
     return Dismissible(
       key: UniqueKey(),

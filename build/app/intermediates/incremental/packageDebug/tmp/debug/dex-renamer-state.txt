@@ -1,4 +1,4 @@
-#Sat Oct 24 14:57:38 CEST 2020
+#Sat Oct 24 18:30:12 CEST 2020
 base.0=/Users/rillopis/Developer/Projects/Flutter/everpobre-master/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
