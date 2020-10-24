@@ -1,4 +1,5 @@
 import 'package:everpobre/Scenes/notebook_scene.dart';
+import 'package:everpobre/domain/messages.dart';
 import 'package:everpobre/domain/notebook.dart';
 import 'package:everpobre/domain/notebooks.dart';
 import 'package:everpobre/text_resources.dart';
@@ -19,11 +20,12 @@ class TreeBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {
-        //NoteBookListView.routeName: (context) => NoteBookListView(model),
-        MainWidget.routeName: (context) => MainWidget(),
-      },
-      initialRoute: MainWidget.routeName,
+      //routes: {    
+      //  MainWidget.routeName: (BuildContext context) => MainWidget(),
+      //  NoteBookListView.routeName: (BuildContext context) => NoteBookListView(),
+      //},
+      //initialRoute: MainWidget.routeName,
+      home: MainWidget(),
     );
   }
 }
@@ -38,16 +40,12 @@ class MainWidget extends StatefulWidget{
 class _MainWidgetState extends State<MainWidget> {
   final Notebooks modelNotebooks = Notebooks.testDataBuilder();
 
-  
-
-
-
   @override
   Widget build(BuildContext context){
     return MaterialApp(
       theme: ThemeData.light().copyWith(
-        primaryColor: Color(0xFF388E3C),
-        accentColor: Color(0xFFFFC107),
+        primaryColor: const Color(0xFF388E3C),
+        accentColor: const Color(0xFFFFC107),
       ),
       title: TextResources.appName,
     home: Scaffold(appBar: AppBar(
@@ -109,9 +107,9 @@ class NoteBookSliver extends StatefulWidget {
   final Notebooks notebooks;
   final int index;
 
-  const NoteBookSliver(Notebooks notebooks, int index) :
-  this.notebooks = notebooks,
-  this.index = index;
+  const NoteBookSliver(Notebooks _notebooks, int _index) :
+  notebooks = _notebooks,
+  index = _index;
 
   @override
   _NoteBookSliverState createState() => _NoteBookSliverState();
@@ -134,11 +132,23 @@ class _NoteBookSliverState extends State<NoteBookSliver> {
       background: Container(
         color: Colors.red
       ),
-      child: Card(
+      child: GestureDetector(
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => 
+          NoteBookListView(widget.notebooks[widget.index])),
+          //Navigator.pushNamed(context, NoteBookListView.routeName,
+          //arguments: MessageNotebook(widget.notebooks[widget.index]));
+          );
+          
+        },
+        child:Card(
         child: ListTile(
           leading: const Icon(Icons.toc),
           title: Text(widget.notebooks[widget.index].title),
         ),
+      ),
       ),
     );
   }

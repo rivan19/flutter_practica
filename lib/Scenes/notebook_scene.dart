@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 class NoteBookListView extends StatefulWidget {
   final Notebook _model;
+
   const NoteBookListView(Notebook model) : _model = model;
 
   static const routeName = "/Notebook";
